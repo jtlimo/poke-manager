@@ -1,0 +1,6 @@
+#ignore ide files
+.idea/*
+src/.idea/*
+
+#ignore node_modules
+node_modules/*
