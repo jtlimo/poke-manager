@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Poke: React.FunctionComponent = () => {
+const PokeManager: React.FunctionComponent = () => {
     return (
         <div>
             <h1>oi</h1>
@@ -8,4 +8,4 @@ const Poke: React.FunctionComponent = () => {
         );
     };
 
-export default Poke;
+export default PokeManager;

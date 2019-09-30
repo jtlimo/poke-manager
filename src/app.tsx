@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import Poke from './Poke';
+import PokeManager from '../src/containers/PokeManager/PokeManager';
 
-ReactDom.render(<Poke />,  document.getElementById('src'));
+ReactDom.render(<PokeManager />,  document.getElementById('src'));
