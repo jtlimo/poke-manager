@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PokeManager: React.FunctionComponent = () => {
+const PokeManager: React.FC = () => {
     return (
         <div>
             <h1>oi</h1>

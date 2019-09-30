@@ -2,8 +2,8 @@
   // compiler (tsc) and makes VSCode recognize this folder as a TS project,
   // enabling the VSCode build tasks "tsc: build" and "tsc: watch".
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
+    "target": "es5",
+    "module": "es6",
     "moduleResolution": "node", // Tell tsc to look in node_modules for modules
     "sourceMap": true,          // Whether to create *.js.map files
     "jsx": "react",             // Causes inline XML (JSX code) to be expanded
