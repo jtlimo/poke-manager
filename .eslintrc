@@ -8,13 +8,17 @@
     "version": "detect"
     }
   },
+  "plugins": [
+    "security"
+  ],
   "extends": [
     "eslint:recommended", 
     "eslint-config-prettier",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:security/recommended"
   ],
   "rules": {
     "no-console": "off"
