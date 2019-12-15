@@ -2,7 +2,7 @@ module.exports = {
   entry: __dirname+'/src/app.tsx',
   output: {
     path: __dirname+'/src',
-    filename: 'app.bundle.js'
+    filename: 'build/app.bundle.js'
   },
   module: {
     rules: [
