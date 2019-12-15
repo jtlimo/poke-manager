@@ -13,7 +13,8 @@
     "prettier": "prettier \"**/*.{json,yml,yaml,css,less,scss,ts,tsx,md}\"",
     "format": "npm run prettier -- --write",
     "validate": "npm run lint && npm run format -- --list-different",
-    "precommit": "lint-staged && npm run validate"
+    "precommit": "lint-staged && npm run validate",
+    "oi": "aff"
   },
   "repository": {
     "type": "git",
