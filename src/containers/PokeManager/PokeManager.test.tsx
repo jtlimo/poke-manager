@@ -1,9 +1,9 @@
 import PokeManager from './PokeManager';
-import { shallow } from 'enzyme';
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 describe('PokeManager', () => {
   it('does renders correctly', () => {
-    expect(shallow(<PokeManager />)).toBeDefined();
+    ReactDOM.render(<PokeManager />, document.getElementById('src'));
   });
 });
