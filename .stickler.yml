@@ -1,5 +1,5 @@
 linters:
-  tslint: {  }
+  tslint: {}
 files:
   ignore:
     - 'bower_components/*'
