@@ -8,6 +8,7 @@ steps:
     commands:
       - npm install
       - npm run build
+      - git rev-parse HEAD > version.txt
 
   - name: unit tests
     image: node:alpine
