@@ -4,3 +4,6 @@ src/.idea/*
 
 #ignore node_modules
 node_modules/*
+
+#ignore build dir
+build
