@@ -8,7 +8,7 @@ steps:
     commands:
       - npm install
       - npm run build
-      - git rev-parse HEAD > version.txt
+      - echo $DRONE_COMMIT > version.txt
 
   - name: unit tests
     image: node:alpine
