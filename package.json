@@ -12,9 +12,7 @@
     "lint": "eslint --fix src\"**/*.{ts,tsx}\"",
     "prettier": "prettier \"**/*.{json,yml,yaml,css,less,scss,ts,tsx,md}\"",
     "format": "npm run prettier -- --write",
-    "validate": "npm run lint && npm run format -- --list-different",
-    "precommit": "lint-staged && npm run validate",
-    "postpack": "inhai"
+    "validate": "npm run lint && npm run format -- --list-different"
   },
   "repository": {
     "type": "git",
@@ -63,5 +61,10 @@
   "jest": {
     "testEnvironment": "jsdom",
     "testURL": "http://localhost/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run validate"
+    }
   }
 }
