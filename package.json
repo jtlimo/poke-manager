@@ -29,7 +29,7 @@
   "homepage": "https://github.com/jtlimo/poke-manager#readme",
   "devDependencies": {
     "@testing-library/react": "^9.4.0",
-    "@types/jest": "^24.0.23",
+    "@types/jest": "^24.9.0",
     "@types/node": "^12.12.17",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
