@@ -1,9 +1,6 @@
 {
-    "*.{ts, tsx}": [
-      "eslint"
-    ],
-    "*.+(json|yml|yaml|css|less|scss|ts|tsx|md)": [
-      "prettier --write",
+    "*.(json|yml|yaml|css|less|scss|ts|tsx|md)": [
+      "npm run validate --",
       "git add"
     ]
 }
