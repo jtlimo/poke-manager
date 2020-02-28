@@ -12,7 +12,7 @@
     "lint": "eslint --fix src\"**/*.{ts,tsx}\"",
     "prettier": "prettier \"**/*.{json,yml,yaml,css,less,scss,ts,tsx,md}\"",
     "format": "npm run prettier -- --write",
-    "validate": "npm run lint && npm run format -- --list-different"
+    "validate": "npm run lint && npm run format npm run test -- --list-different"
   },
   "repository": {
     "type": "git",
