@@ -4,7 +4,7 @@
   "description": "Management of Pokemons",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --bail --findRelatedTests",
     "build": "webpack src/app.tsx --module-bind tsx=awesome-typescript-loader -o build/app.bundle.js --mode=production",
     "build:dev": "webpack src/app.tsx --module-bind tsx=awesome-typescript-loader -o build/app.bundle.js --mode=development",
     "watch": "webpack src/app.tsx --module-bind tsx=awesome-typescript-loader -o build/app.bundle.js --mode=development --watch",
@@ -12,7 +12,14 @@
     "lint": "eslint --fix src\"**/*.{ts,tsx}\"",
     "prettier": "prettier \"**/*.{json,yml,yaml,css,less,scss,ts,tsx,md}\"",
     "format": "npm run prettier -- --write",
-    "validate": "npm run lint && npm run format npm run test -- --list-different"
+    "validate": "npm run lint && npm run format --list-different"
+  },
+  "lint-staged": {
+    "*.{json,yml,yaml,css,less,scss,ts,tsx,md}": [
+      "npm test",
+      "npm run validate",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",

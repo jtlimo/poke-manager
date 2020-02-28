@@ -1,6 +1,0 @@
-{
-    "*.(json|yml|yaml|css|less|scss|ts|tsx|md)": [
-      "npm run validate --",
-      "git add"
-    ]
-}
