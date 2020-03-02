@@ -2,13 +2,16 @@
 name: Pokemon
 route: /
 ---
-
-import { Pokemon } from '../src/features/search-pokemon/pages/Pokemon.tsx'
+import { Props } from 'docz'
+import Pokemon from '../src/features/search-pokemon/pages/Pokemon.tsx'
 
 
 # Pokemon
 
 A functional component that represents an unique Pokemon at grid list.
+
+### Pokemon Props
+<Props of={Pokemon} />
 
 <Playground>
   <Pokemon image={'https://pngimg.com/uploads/pokemon/pokemon_PNG78.png'} name={'Pikachu'} />
