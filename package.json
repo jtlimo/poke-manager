@@ -12,7 +12,10 @@
     "lint": "eslint --fix src\"**/*.{ts,tsx}\"",
     "prettier": "prettier \"**/*.{json,yml,yaml,css,less,scss,ts,tsx,md}\"",
     "format": "npm run prettier -- --write",
-    "validate": "npm run lint && npm run format --list-different"
+    "validate": "npm run lint && npm run format --list-different",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve"
   },
   "lint-staged": {
     "*.{json,yml,yaml,css,less,scss,ts,tsx,md}": [
@@ -60,6 +63,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "docz": "^2.2.0",
     "fastify": "^2.11.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
