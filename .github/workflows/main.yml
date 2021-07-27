@@ -1,7 +1,10 @@
 # Controls when the workflow will run
 on: [push, pull_request]
 name: comment-pr
-uses: JoseThen/comment-pr@aab6e6ea49273340cfd502ac3fecdbde70b88011
+jobs:
+  myjob:
+    runs-on: ubuntu-latest
+uses: github-actions-up-and-running/pr-comment@v1.0.1
 with:
-comment: AAAAAAAAA
-GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  repo-token: ${{ secrets.GITHUB_TOKEN }}
+  message: AAAAAA
