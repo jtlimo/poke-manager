@@ -1,5 +1,5 @@
 # Controls when the workflow will run
-on: [push, pull_request]
+on: pull_request
 name: comment-pr
 jobs:
   myjob:
